@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+        <h2 class="text-center mb-4">Kölcsönzések</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Könyv címe</th>
+              <th scope="col">Író</th>
+              <th scope="col">Műfaj</th>
+              <th scope="col">Műveletek</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let kolcsonzes of kolcsonzesek">
+              <td>{{ kolcsonzes.cim }}</td>
+              <td>{{ kolcsonzes.iro }}</td>
+              <td>{{ kolcsonzes.mufaj }}</td>
+              <td>
+                <button class="btn btn-warning btn-sm">Módosítás</button>
+                <button class="btn btn-danger btn-sm">Törlés</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  

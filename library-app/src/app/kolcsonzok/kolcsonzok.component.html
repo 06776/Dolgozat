@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <h2 class="text-center mb-4">Ügyfelek</h2>
+      <div *ngFor="let kolcsonzo of kolcsonzok" class="card mb-3">
+        <div class="card-body">
+          <h5 class="card-title">{{ kolcsonzo.nev }}</h5>
+          <p class="card-text">Születési idő: {{ kolcsonzo.szulIdo }}</p>
+          <button
+            class="btn btn-primary btn-sm"
+            (click)="toggleKolcsonzesek(kolcsonzo)"
+          >
+            Kölcsönzések
+          </button>
+          <div *ngIf="kolcsonzo.showKolcsonzesek" class="mt-3"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
