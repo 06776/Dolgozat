@@ -1,0 +1,42 @@
+h1 {
+  background-color: rgba(161, 211, 54, 0.6);
+  color: white;
+  font-size: 12rem;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 20px;
+  text-align: center;
+}
+
+.image-container {
+  margin: 0 auto;
+  border: 10px solid #a1d336;
+  border-radius: 3rem;
+  width: 50%;
+  padding: 20px;
+}
+
+.book-image {
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.rotated {
+  transform: rotate(180deg);
+  float: right;
+}
+
+.book-image:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 5rem;
+    margin-top: 2vh;
+  }
+
+  .image-container {
+    display: none;
+  }
+}

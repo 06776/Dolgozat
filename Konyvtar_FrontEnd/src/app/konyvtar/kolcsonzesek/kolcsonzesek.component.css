@@ -1,0 +1,9 @@
+h1 {
+  background-color: rgba(161, 211, 54, 0.6);
+  color: white;
+  font-size: 8rem;
+  font-weight: 100;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 20px;
+  text-align: center;
+}

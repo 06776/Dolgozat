@@ -1,0 +1,7 @@
+<div class="container">
+  <div *ngIf="(customers$ | async) as customers">
+    <div *ngFor="let customer of customers">
+      <p>{{ customer.name }} - {{ customer.birthdate }}</p>
+    </div>
+  </div>
+</div>
